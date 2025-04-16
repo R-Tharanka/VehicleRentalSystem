@@ -1,20 +1,20 @@
-﻿# 🚗 Vehicle Rental System
+﻿#  Vehicle Rental System
 
 A simple and user-friendly desktop application developed using **C# (.NET)** and **Windows Forms** that allows users to manage a fleet of vehicles for a rental service.
 
 ## 🛠️ Features
 
-- ➕ Add new vehicles (Cars and Motorbikes) with specific attributes:
+-  Add new vehicles (Cars and Motorbikes) with specific attributes:
   - Cars: Number of doors
   - Motorbikes: Presence of a sidecar
-- 🗂️ View a list of registered vehicles with detailed information:
+-  View a list of registered vehicles with detailed information:
   - Registration number, brand, year, rental status, and specific details (e.g., doors or sidecar)
-- 📝 Update vehicle information (via re-adding or modifying)
-- ❌ Delete vehicles from the list
-- 🚗 Rent vehicles and mark them as "Rented"
-- 🔄 Return rented vehicles and mark them as "Available"
-- 🧼 Clean, intuitive UI with responsive layout
-- 💾 Local data management (currently in-memory, extendable to file storage or database)
+-  Update vehicle information (via re-adding or modifying)
+-  Delete vehicles from the list
+-  Rent vehicles and mark them as "Rented"
+-  Return rented vehicles and mark them as "Available"
+-  Clean, intuitive UI with responsive layout
+-  Local data management (currently in-memory, extendable to file storage or database)
 
 ## 📂 Project Structure
 
@@ -40,14 +40,14 @@ A simple and user-friendly desktop application developed using **C# (.NET)** and
 
 > 📌 You can modify the structure based on how your app is organized.
 
-## 🧑‍💻 Tech Stack
+##  Tech Stack
 
 - **Language:** C#
 - **Framework:** .NET Windows Forms App
 - **IDE:** Visual Studio 2022/2023 Community Edition
 - **Data Storage:** In-memory (extendable to plain text files or SQLite)
 
-## 🖼️ Screenshots
+## 🖼 Screenshots
 
 > Add screenshots here (e.g., main dashboard, add vehicle form, vehicle list, etc.)
 
@@ -63,7 +63,7 @@ A simple and user-friendly desktop application developed using **C# (.NET)** and
 3. Build the solution (__Ctrl + Shift + B__).
 4. Run the application (__F5__).
 
-## 📌 Usage
+##  Usage
 
 1. **Add Vehicle**:
    - Click "Add Vehicle" to register a new vehicle.
@@ -86,13 +86,13 @@ A simple and user-friendly desktop application developed using **C# (.NET)** and
    - Select a vehicle and click "Delete" to remove it from the list.
    - A confirmation dialog will appear before deletion.
 
-## 🚀 Future Enhancements
+##  Future Enhancements
 
-- 🔐 Add login and registration system for user authentication.
-- 💾 Implement local data persistence using text files or SQLite.
-- 📊 Add reporting features (e.g., rental history, revenue tracking).
-- 🧾 Manage rental details (e.g., customer information, rental duration).
-- 🌐 Explore cloud-based data storage for scalability.
+-  Add login and registration system for user authentication.
+-  Implement local data persistence using text files or SQLite.
+-  Add reporting features (e.g., rental history, revenue tracking).
+-  Manage rental details (e.g., customer information, rental duration).
+-  Explore cloud-based data storage for scalability.
 
 ---
 

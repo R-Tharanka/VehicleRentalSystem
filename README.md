@@ -45,10 +45,6 @@ A simple and user-friendly desktop application developed using **C# (.NET)** and
 - **IDE:** Visual Studio 2022/2023 Community Edition
 - **Data Storage:** In-memory (extendable to plain text files or SQLite)
 
-## 🖼 Screenshots
-
-> Add screenshots here (e.g., main dashboard, add vehicle form, vehicle list, etc.)
-
 ## 🔧 Setup Instructions
 
 1. Clone the repository:

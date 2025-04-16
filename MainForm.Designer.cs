@@ -33,28 +33,34 @@
             btnLoadVehicles = new Button();
             btnRent = new Button();
             btnReturn = new Button();
+            btnAddVehicle = new Button();
+            btnDelete = new Button();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(95, 33);
+            label1.Font = new Font("Segoe UI", 12F);
+            label1.Location = new Point(58, 33);
             label1.Name = "label1";
-            label1.Size = new Size(128, 20);
+            label1.Size = new Size(166, 28);
             label1.TabIndex = 0;
             label1.Text = "Available Vehicles";
             // 
             // listBoxVehicles
             // 
+            listBoxVehicles.Font = new Font("Consolas", 9F);
             listBoxVehicles.FormattingEnabled = true;
-            listBoxVehicles.Location = new Point(95, 101);
+            listBoxVehicles.ItemHeight = 18;
+            listBoxVehicles.Location = new Point(58, 121);
             listBoxVehicles.Name = "listBoxVehicles";
-            listBoxVehicles.Size = new Size(477, 224);
+            listBoxVehicles.Size = new Size(527, 202);
             listBoxVehicles.TabIndex = 1;
             // 
             // btnLoadVehicles
             // 
-            btnLoadVehicles.Location = new Point(446, 367);
+            btnLoadVehicles.Cursor = Cursors.Hand;
+            btnLoadVehicles.Location = new Point(58, 362);
             btnLoadVehicles.Name = "btnLoadVehicles";
             btnLoadVehicles.Size = new Size(126, 29);
             btnLoadVehicles.TabIndex = 2;
@@ -64,7 +70,8 @@
             // 
             // btnRent
             // 
-            btnRent.Location = new Point(631, 101);
+            btnRent.Cursor = Cursors.Hand;
+            btnRent.Location = new Point(269, 362);
             btnRent.Name = "btnRent";
             btnRent.Size = new Size(113, 29);
             btnRent.TabIndex = 3;
@@ -74,7 +81,8 @@
             // 
             // btnReturn
             // 
-            btnReturn.Location = new Point(631, 167);
+            btnReturn.Cursor = Cursors.Hand;
+            btnReturn.Location = new Point(472, 362);
             btnReturn.Name = "btnReturn";
             btnReturn.Size = new Size(113, 29);
             btnReturn.TabIndex = 4;
@@ -82,18 +90,42 @@
             btnReturn.UseVisualStyleBackColor = true;
             btnReturn.Click += btnReturn_Click;
             // 
+            // btnAddVehicle
+            // 
+            btnAddVehicle.Cursor = Cursors.Hand;
+            btnAddVehicle.Location = new Point(634, 121);
+            btnAddVehicle.Name = "btnAddVehicle";
+            btnAddVehicle.Size = new Size(124, 29);
+            btnAddVehicle.TabIndex = 5;
+            btnAddVehicle.Text = "Add Vehicle";
+            btnAddVehicle.UseVisualStyleBackColor = true;
+            btnAddVehicle.Click += btnAddVehicle_Click;
+            // 
+            // btnDelete
+            // 
+            btnDelete.Cursor = Cursors.Hand;
+            btnDelete.Location = new Point(634, 196);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(124, 29);
+            btnDelete.TabIndex = 6;
+            btnDelete.Text = "Remove Vehicle";
+            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnDelete);
+            Controls.Add(btnAddVehicle);
             Controls.Add(btnReturn);
             Controls.Add(btnRent);
             Controls.Add(btnLoadVehicles);
             Controls.Add(listBoxVehicles);
             Controls.Add(label1);
             Name = "MainForm";
-            Text = "Form1";
+            Text = "Vehicle Rental System";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -105,5 +137,7 @@
         private Button btnLoadVehicles;
         private Button btnRent;
         private Button btnReturn;
+        private Button btnAddVehicle;
+        private Button btnDelete;
     }
 }

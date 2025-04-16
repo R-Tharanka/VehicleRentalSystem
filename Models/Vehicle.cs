@@ -39,8 +39,9 @@ namespace VehicleRentalSystem.Models
         public virtual string GetInfo()
         {
             string status = isRented ? "Rented" : "Available";
-            return $"{Brand} ({Year}) - Reg#: {RegistrationNumber} | Status: {status}";
+            return $"{RegistrationNumber,-10} | {Brand,-10} | {Year,-4} | {status,-9}";
         }
+
     }
 }
 

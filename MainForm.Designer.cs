@@ -28,12 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            label1 = new Label();
+            listBoxVehicles = new ListBox();
+            btnLoadVehicles = new Button();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(95, 62);
+            label1.Name = "label1";
+            label1.Size = new Size(128, 20);
+            label1.TabIndex = 0;
+            label1.Text = "Available Vehicles";
+            // 
+            // listBoxVehicles
+            // 
+            listBoxVehicles.FormattingEnabled = true;
+            listBoxVehicles.Location = new Point(95, 130);
+            listBoxVehicles.Name = "listBoxVehicles";
+            listBoxVehicles.Size = new Size(300, 184);
+            listBoxVehicles.TabIndex = 1;
+            // 
+            // btnLoadVehicles
+            // 
+            btnLoadVehicles.Location = new Point(269, 355);
+            btnLoadVehicles.Name = "btnLoadVehicles";
+            btnLoadVehicles.Size = new Size(126, 29);
+            btnLoadVehicles.TabIndex = 2;
+            btnLoadVehicles.Text = "Load Vehicles";
+            btnLoadVehicles.UseVisualStyleBackColor = true;
+            btnLoadVehicles.Click += btnLoadVehicles_Click;
+            // 
+            // MainForm
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(btnLoadVehicles);
+            Controls.Add(listBoxVehicles);
+            Controls.Add(label1);
+            Name = "MainForm";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
+        private ListBox listBoxVehicles;
+        private Button btnLoadVehicles;
     }
 }

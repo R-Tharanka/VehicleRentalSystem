@@ -38,8 +38,6 @@ A simple and user-friendly desktop application developed using **C# (.NET)** and
 └── VehicleRentalSystem.sln
 ```
 
-> 📌 You can modify the structure based on how your app is organized.
-
 ##  Tech Stack
 
 - **Language:** C#
